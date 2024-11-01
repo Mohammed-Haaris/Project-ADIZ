@@ -1,0 +1,239 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-animate {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.animate__animated {
+  opacity: 1 !important;
+}
+
+/* navbar structures */
+
+/* Hide dropdown by default */
+
+/* Show dropdown on hover (for large screens only) */
+
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.nav-item .dropdown-menu {
+  display: none;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  background-color: white; /* Optional: adjust for better visibility */
+}
+
+/* Optional: Smooth scrolling */
+
+.navbar {
+  padding: 15px; /*padding inside the Navigation bar */
+  background-color: #0855b1; /*background-color for navbar */
+}
+
+.nav-link {
+  color: white; /*color for the Navigation links*/
+  font-family: poppins, sans-serif;
+}
+
+.navbar-brand {
+  color: white; /*color for the Navigation brand name or a company name*/
+  font-family: poppins, sans-serif; /*font family and styles*/
+  font-size: 23px; /* size of the navigation brand name or company name*/
+}
+
+@media (max-width: 768px) {
+  .button1 {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .button1 {
+    display: none;
+  }
+}
+
+/* Media query for smaller screens for displaying the navbar*/
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Reduce navbar padding */
+  }
+
+  .navbar-brand {
+    font-size: 18px; /* Decrease the brand name font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px; /* Further reduce navbar padding */
+  }
+
+  .navbar-brand {
+    font-size: 16px; /* Further decrease brand name font size */
+  }
+}
+
+/* navbar section ends */
+
+/*  hero section*/
+
+.header1 {
+  font-size: 60px;
+  color: black;
+  font-family: poppins, sans-serif;
+}
+
+.header2 {
+  color: #686d76;
+}
+
+.hero {
+  margin-top: 150px;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    margin-top: 60px;
+  }
+}
+
+/* media queries to set the font size being responsive in hero section */
+
+@media (max-width: 480px) {
+  .header1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header1 {
+    font-size: 30px;
+  }
+}
+
+/* image width sizening in hero section */
+
+.img-fluid {
+  width: 600px;
+}
+
+@media (max-width: 600px) {
+  .img-fluid {
+    margin-top: 70px;
+  }
+}
+
+/* button sizening */
+
+.button2 {
+  padding: 12px;
+}
+
+/* hero section ends */
+
+/* feature list section */
+
+.line {
+  font-family: poppins, sans-serif;
+}
+
+.feature-image {
+  margin-top: 40px;
+}
+
+.feature {
+  margin-top: 70px; /*  container-fluid (feature) margin sizing */
+}
+
+@media (max-width: 600px) {
+  .feature {
+    margin-top: 80px;
+  }
+}
+
+.para {
+  padding-top: 30px; /* sizing the para content padding top*/
+}
+
+.course-list {
+  padding-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #686d76;
+}
+
+/* Custom styles for screen width between 768px and 1024px */
+@media screen and (min-width: 768px) and (max-width: 1040px) {
+  .course-list {
+    /* Customize your element here */
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .course-list {
+    /* Customize your element here */
+    font-size: 16px;
+  }
+}
+
+.header-3 {
+  margin-top: 5px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: poppins, sans-serif;
+  color: black;
+}
+
+/* media query for the header-3 class upto 600 pixels screen to be responsive. */
+@media (max-width: 600px) {
+  .header-3 {
+    padding-left: 0px;
+    padding-right: 10px;
+    font-size: 10px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-3 {
+    padding-left: 0px;
+    padding-right: 10px;
+    font-size: 20px;
+    margin-top: 0px;
+  }
+}
+
+/* testimonal section starts */
+
+.test {
+  margin-top: 5rem;
+}
+
+.head-test {
+  font-family: poppins, sans-serif;
+}
+
+.header-4 {
+  margin-top: 100px;
+  font-family: poppins, sans-serif;
+  font-size: 40px;
+  color: black;
+}
